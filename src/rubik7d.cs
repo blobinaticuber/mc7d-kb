@@ -9,6 +9,7 @@ using System.IO;
 using System.Reflection;
 using System.Threading;
 using System.Windows.Forms;
+using _3dedit.src;
 using Microsoft.DirectX;
 using Microsoft.DirectX.Direct3D;
 
@@ -1466,7 +1467,7 @@ namespace _3dedit
             this.editFilters.Name = "editFilters";
             this.editFilters.Size = new System.Drawing.Size(165, 22);
             this.editFilters.Text = "Edit Filters";
-            this.editFilters.Click += new System.EventHandler(this.editKeybinds_Click);
+            this.editFilters.Click += new System.EventHandler(this.editFilters_Click);
             // 
             // puzzleToolStripMenuItem
             // 
@@ -1747,6 +1748,9 @@ namespace _3dedit
 
         Keybindings Keybinds = new Keybindings();
         Form KeybindsSetup;
+
+        Filters Filters = new Filters();
+        Form FilterSetup;
 
         bool AltHighlight=false;
         bool[] NColMask;
@@ -3001,6 +3005,17 @@ namespace _3dedit
             KeybindsSetup.Show();
             KeybindsSetup.Focus();
             KeybindsSetup.WindowState = FormWindowState.Normal;
+        }
+
+        private void editFilters_Click(object sender, EventArgs e)
+        {
+            if (FilterSetup == null || FilterSetup.IsDisposed)
+            {
+                FilterSetup = new FilterSetup(this.Filters);
+            }
+            FilterSetup.Show();
+            FilterSetup.Focus();
+            FilterSetup.WindowState = FormWindowState.Normal;
         }
 
     }
