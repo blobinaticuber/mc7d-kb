@@ -146,6 +146,7 @@ namespace _3dedit
         private ToolStripStatusLabel m_lblCTime;
         private CheckBox m_RunByClick;
         private ToolStripDropDownButton activeKeybind;
+        private ToolStripDropDownButton activeFilter;
         private ToolStripSeparator toolStripSeparator2;
         private ToolStripMenuItem editKeybinds;
         private ToolStripMenuItem mi_PuzzleSize2;
@@ -293,6 +294,7 @@ namespace _3dedit
             this.ms_MacroStatus = new System.Windows.Forms.ToolStripStatusLabel();
             this.m_lblCTime = new System.Windows.Forms.ToolStripStatusLabel();
             this.activeKeybind = new System.Windows.Forms.ToolStripDropDownButton();
+            this.activeFilter = new System.Windows.Forms.ToolStripDropDownButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mi_Open = new System.Windows.Forms.ToolStripMenuItem();
@@ -1202,7 +1204,8 @@ namespace _3dedit
             this.ms_Twists,
             this.ms_MacroStatus,
             this.m_lblCTime,
-            this.activeKeybind});
+            this.activeKeybind,
+            this.activeFilter});
             this.statusStrip1.Location = new System.Drawing.Point(0, 661);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(774, 23);
@@ -1248,6 +1251,15 @@ namespace _3dedit
             this.activeKeybind.Size = new System.Drawing.Size(74, 21);
             this.activeKeybind.Text = "Keybinds: ";
             this.activeKeybind.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // activeFilter
+            // 
+            this.activeFilter.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.activeFilter.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.activeFilter.Name = "activeFilter";
+            this.activeFilter.Size = new System.Drawing.Size(74, 21);
+            this.activeFilter.Text = "Filter: ";
+            this.activeFilter.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // menuStrip1
             // 
