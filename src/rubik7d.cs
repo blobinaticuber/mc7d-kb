@@ -197,6 +197,8 @@ namespace _3dedit
             Keybinds.KeybindLayoutsChanged += this.UpdateKeybindMenu;
             this.UpdateKeybindMenu(null, EventArgs.Empty);
             Keybindings.loaded = Keybinds;
+
+            LoadFilters("MC7D_filters.txt");
         }
 
 		/// <summary>
@@ -2370,6 +2372,7 @@ namespace _3dedit
             if(!SettingsSaved) {
                 SaveSettings("MC7D_settings.txt");
                 SaveKeybinds("MC7D_keybinds.txt");
+                SaveFilters("MC7D_filters.txt");
                 SettingsSaved =true;
             }
             Application.Exit();
@@ -2378,6 +2381,7 @@ namespace _3dedit
             if(!SettingsSaved) {
                 SaveSettings("MC7D_settings.txt");
                 SaveKeybinds("MC7D_keybinds.txt");
+                SaveFilters("MC7D_filters.txt");
                 SettingsSaved =true;
             }
         }
@@ -2587,6 +2591,21 @@ namespace _3dedit
             }
         }
 
+        void SaveFilters(string fn)
+        {
+            try
+            {
+                StreamWriter sw = new StreamWriter(fn);
+                sw.NewLine = "\r\n";
+                sw.WriteLine("MC7D Filters");
+                //sw.Write(Keybinds.Serialize());
+                sw.WriteLine();
+                sw.Close();
+            }
+            catch { }
+
+        }
+
         void SaveKeybinds(string fn)
         {
             try
@@ -2599,6 +2618,11 @@ namespace _3dedit
                 sw.Close();
             }
             catch { }
+        }
+
+        void LoadFilters(string fn)
+        {
+            // code to load the filters from the "MC7D_filters.txt"
         }
 
         void LoadKeybinds(string fn)

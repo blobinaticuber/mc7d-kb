@@ -35,31 +35,35 @@ namespace _3dedit.src
             this.f_col14.BackColor = Color.FromArgb((int)CubeObj.Colors[14]);
         }
 
-        private void createButton(string name)
+        // returns a panel with the name of the filter
+        private FlowLayoutPanel createFilter(string name)
         {
-            //Button btn = new Button();
-            //btn.Text = name;
-            //btn.Name = name;
-            //btn.Click += new System.EventHandler(this.SwitchLayout_Click);
-            //btn.Width = addNewLayout.Width;
+            FlowLayoutPanel panel = new FlowLayoutPanel
+            {
+                Anchor = AnchorStyles.Top | AnchorStyles.Left,
+                Name = name,
+                Height = 28,
+                WrapContents = false,
+                AutoSize = true,
+            };
 
+            // adds a label to the panel 
             Label lbl = new Label();
             lbl.Text = name;
             lbl.Name = name;
+            panel.Controls.Add(lbl);
 
-            this.flowLayoutPanel2.Controls.Add(lbl);
+            return panel;
         }
 
-        private void AddNewLayout_Click(object sender, EventArgs e)
+        private void AddFilter_click(object sender, EventArgs e)
         {
-            TextDialog td = new TextDialog("Enter Layout Name");
-            DialogResult res = td.ShowDialog(this);
-            if (res.Equals(DialogResult.OK))
-            {
-                string name = td.Value.Replace(' ', '_').Replace(',', '_');
-                    createButton(name);
-                
-            }
+            Control addButton = filterList.Controls[filterList.Controls.Count - 1];
+            Control p = createFilter(filterNameBox.Text);
+
+            filterList.Controls.Remove(addButton);
+            filterList.Controls.Add(p);
+            filterList.Controls.Add(addButton);
         }
 
 
