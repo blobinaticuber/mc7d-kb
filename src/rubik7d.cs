@@ -148,6 +148,7 @@ namespace _3dedit
         private ToolStripSeparator toolStripSeparator2;
         private ToolStripMenuItem editKeybinds;
         private ToolStripMenuItem mi_PuzzleSize2;
+        private ToolStripMenuItem editFilters;
         private System.ComponentModel.IContainer components;
 
 		public Form1() {
@@ -317,6 +318,7 @@ namespace _3dedit
             this.recalculateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.editKeybinds = new System.Windows.Forms.ToolStripMenuItem();
+            this.editFilters = new System.Windows.Forms.ToolStripMenuItem();
             this.puzzleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mi_Puzzle4D = new System.Windows.Forms.ToolStripMenuItem();
             this.mi_Puzzle5D = new System.Windows.Forms.ToolStripMenuItem();
@@ -1324,7 +1326,8 @@ namespace _3dedit
             this.toolStripMenuItem4,
             this.recalculateToolStripMenuItem,
             this.toolStripSeparator2,
-            this.editKeybinds});
+            this.editKeybinds,
+            this.editFilters});
             this.editToolStripMenuItem.Name = "editToolStripMenuItem";
             this.editToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.editToolStripMenuItem.Text = "Edit";
@@ -1457,6 +1460,13 @@ namespace _3dedit
             this.editKeybinds.Size = new System.Drawing.Size(165, 22);
             this.editKeybinds.Text = "Edit Keybinds";
             this.editKeybinds.Click += new System.EventHandler(this.editKeybinds_Click);
+            // 
+            // editFilters
+            // 
+            this.editFilters.Name = "editFilters";
+            this.editFilters.Size = new System.Drawing.Size(165, 22);
+            this.editFilters.Text = "Edit Filters";
+            this.editFilters.Click += new System.EventHandler(this.editKeybinds_Click);
             // 
             // puzzleToolStripMenuItem
             // 
