@@ -246,6 +246,9 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="src\FilterSetup.resx">
+      <DependentUpon>FilterSetup.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="src\KeybindSetup.resx">
       <DependentUpon>KeybindSetup.cs</DependentUpon>
     </EmbeddedResource>
