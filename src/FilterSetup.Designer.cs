@@ -51,7 +51,7 @@
             this.cb_Show2C = new System.Windows.Forms.CheckBox();
             this.cb_Show7C = new System.Windows.Forms.CheckBox();
             this.cb_Show4C = new System.Windows.Forms.CheckBox();
-            this.checkBox15 = new System.Windows.Forms.CheckBox();
+            this.highlight = new System.Windows.Forms.CheckBox();
             this.checkBox8 = new System.Windows.Forms.CheckBox();
             this.checkBox9 = new System.Windows.Forms.CheckBox();
             this.checkBox10 = new System.Windows.Forms.CheckBox();
@@ -240,7 +240,7 @@
             this.groupBox3.Controls.Add(this.cb_Show2C);
             this.groupBox3.Controls.Add(this.cb_Show7C);
             this.groupBox3.Controls.Add(this.cb_Show4C);
-            this.groupBox3.Controls.Add(this.checkBox15);
+            this.groupBox3.Controls.Add(this.highlight);
             this.groupBox3.Controls.Add(this.checkBox8);
             this.groupBox3.Controls.Add(this.checkBox9);
             this.groupBox3.Controls.Add(this.checkBox10);
@@ -376,17 +376,17 @@
             this.cb_Show4C.Text = "4C";
             this.cb_Show4C.UseVisualStyleBackColor = true;
             // 
-            // checkBox15
+            // highlight
             // 
-            this.checkBox15.AutoSize = true;
-            this.checkBox15.Checked = true;
-            this.checkBox15.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox15.Location = new System.Drawing.Point(3, 121);
-            this.checkBox15.Name = "checkBox15";
-            this.checkBox15.Size = new System.Drawing.Size(112, 17);
-            this.checkBox15.TabIndex = 28;
-            this.checkBox15.Text = "Highlight by colors";
-            this.checkBox15.UseVisualStyleBackColor = true;
+            this.highlight.AutoSize = true;
+            this.highlight.Checked = true;
+            this.highlight.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.highlight.Location = new System.Drawing.Point(3, 121);
+            this.highlight.Name = "highlight";
+            this.highlight.Size = new System.Drawing.Size(112, 17);
+            this.highlight.TabIndex = 28;
+            this.highlight.Text = "Highlight by colors";
+            this.highlight.UseVisualStyleBackColor = true;
             // 
             // checkBox8
             // 
@@ -764,7 +764,7 @@
         private System.Windows.Forms.Button f_col10;
         private System.Windows.Forms.Button f_col9;
         private System.Windows.Forms.Button f_col8;
-        private System.Windows.Forms.CheckBox checkBox15;
+        private System.Windows.Forms.CheckBox highlight;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.CheckBox cb_Show3C;
         private System.Windows.Forms.CheckBox cb_Show5C;

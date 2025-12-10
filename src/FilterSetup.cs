@@ -35,6 +35,12 @@ namespace _3dedit.src
             this.f_col14.BackColor = Color.FromArgb((int)CubeObj.Colors[14]);
         }
 
+
+        private void updateLiveFilterView()
+        {
+            
+        }
+
         // returns a panel with the name of the filter
         private FlowLayoutPanel createFilter(string name)
         {
@@ -47,10 +53,19 @@ namespace _3dedit.src
                 AutoSize = true,
             };
 
-            // adds a label to the panel 
-            Label lbl = new Label();
-            lbl.Text = name;
-            lbl.Name = name;
+            Button delete = new Button
+            {
+                Size = new Size { Height = 20, Width = 20 },
+                Text = "×",
+            };
+
+            Label lbl = new Label
+            {
+                Text = name,
+                Name = name,
+            };
+
+            panel.Controls.Add(delete);
             panel.Controls.Add(lbl);
 
             return panel;
