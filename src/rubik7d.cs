@@ -151,6 +151,10 @@ namespace _3dedit
         private ToolStripMenuItem editKeybinds;
         private ToolStripMenuItem mi_PuzzleSize2;
         private ToolStripMenuItem editFilters;
+        private TabControl tabControl1;
+        private TabPage tabPage1;
+        private TabPage tabPage2;
+        private TabPage tabPage3;
         private System.ComponentModel.IContainer components;
 
 		public Form1() {
@@ -348,6 +352,10 @@ namespace _3dedit
             this.commutatorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.m_trkFullUndoSpeed)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.m_trkTransparency)).BeginInit();
@@ -361,86 +369,30 @@ namespace _3dedit
             this.panel2.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            this.tabPage2.SuspendLayout();
+            this.tabPage3.SuspendLayout();
             this.SuspendLayout();
             // 
             // splitter1
             // 
             this.splitter1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.splitter1.Location = new System.Drawing.Point(774, 0);
+            this.splitter1.Location = new System.Drawing.Point(926, 0);
             this.splitter1.Name = "splitter1";
-            this.splitter1.Size = new System.Drawing.Size(3, 684);
+            this.splitter1.Size = new System.Drawing.Size(3, 766);
             this.splitter1.TabIndex = 18;
             this.splitter1.TabStop = false;
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.m_RunByClick);
-            this.panel1.Controls.Add(this.m_cbQuickMacro);
-            this.panel1.Controls.Add(this.label13);
-            this.panel1.Controls.Add(this.label12);
+            this.panel1.Controls.Add(this.tabControl1);
             this.panel1.Controls.Add(this.m_tbRevStack);
-            this.panel1.Controls.Add(this.label11);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.m_lbMacros);
-            this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.cb_Show3C);
-            this.panel1.Controls.Add(this.cb_Show5C);
-            this.panel1.Controls.Add(this.cb_Show1C);
-            this.panel1.Controls.Add(this.cb_Show6C);
-            this.panel1.Controls.Add(this.cb_Show2C);
-            this.panel1.Controls.Add(this.cb_Show7C);
-            this.panel1.Controls.Add(this.cb_Show4C);
-            this.panel1.Controls.Add(this.cb_HighlightByColors);
-            this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.m_trkFullUndoSpeed);
-            this.panel1.Controls.Add(this.m_trkTransparency);
-            this.panel1.Controls.Add(this.trk_LightSpec);
-            this.panel1.Controls.Add(this.trk_LightDiff);
-            this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.cb_Col14);
-            this.panel1.Controls.Add(this.cb_Col13);
-            this.panel1.Controls.Add(this.cb_Col7);
-            this.panel1.Controls.Add(this.cb_Col12);
-            this.panel1.Controls.Add(this.cb_Col6);
-            this.panel1.Controls.Add(this.cb_Col11);
-            this.panel1.Controls.Add(this.cb_Col5);
-            this.panel1.Controls.Add(this.cb_Col10);
-            this.panel1.Controls.Add(this.cb_Col4);
-            this.panel1.Controls.Add(this.cb_Col9);
-            this.panel1.Controls.Add(this.cb_Col3);
-            this.panel1.Controls.Add(this.cb_Col8);
-            this.panel1.Controls.Add(this.cb_Col2);
-            this.panel1.Controls.Add(this.cb_Col1);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.m_bCol14);
-            this.panel1.Controls.Add(this.m_bCol13);
-            this.panel1.Controls.Add(this.m_bCol7);
-            this.panel1.Controls.Add(this.m_bCol12);
-            this.panel1.Controls.Add(this.m_bCol6);
-            this.panel1.Controls.Add(this.m_bCol11);
-            this.panel1.Controls.Add(this.m_bCol5);
-            this.panel1.Controls.Add(this.m_bCol10);
-            this.panel1.Controls.Add(this.m_bCol4);
-            this.panel1.Controls.Add(this.m_bCol9);
-            this.panel1.Controls.Add(this.m_bCol3);
-            this.panel1.Controls.Add(this.m_bCol8);
-            this.panel1.Controls.Add(this.m_bCol2);
-            this.panel1.Controls.Add(this.m_bCol1);
-            this.panel1.Controls.Add(this.groupBox1);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.trk_Perspective);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.trk_StickerSize);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.trk_BlockSize);
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.trk_faceSep);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.panel1.Location = new System.Drawing.Point(777, 0);
+            this.panel1.Location = new System.Drawing.Point(929, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(220, 684);
+            this.panel1.Size = new System.Drawing.Size(220, 766);
             this.panel1.TabIndex = 19;
             // 
             // m_RunByClick
@@ -448,7 +400,7 @@ namespace _3dedit
             this.m_RunByClick.AutoSize = true;
             this.m_RunByClick.Checked = true;
             this.m_RunByClick.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.m_RunByClick.Location = new System.Drawing.Point(113, 633);
+            this.m_RunByClick.Location = new System.Drawing.Point(110, 191);
             this.m_RunByClick.Name = "m_RunByClick";
             this.m_RunByClick.Size = new System.Drawing.Size(86, 17);
             this.m_RunByClick.TabIndex = 17;
@@ -460,7 +412,7 @@ namespace _3dedit
             this.m_cbQuickMacro.AutoSize = true;
             this.m_cbQuickMacro.Checked = true;
             this.m_cbQuickMacro.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.m_cbQuickMacro.Location = new System.Drawing.Point(6, 633);
+            this.m_cbQuickMacro.Location = new System.Drawing.Point(3, 191);
             this.m_cbQuickMacro.Name = "m_cbQuickMacro";
             this.m_cbQuickMacro.Size = new System.Drawing.Size(98, 17);
             this.m_cbQuickMacro.TabIndex = 17;
@@ -470,7 +422,7 @@ namespace _3dedit
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(95, 194);
+            this.label13.Location = new System.Drawing.Point(6, 278);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(72, 13);
             this.label13.TabIndex = 16;
@@ -479,7 +431,7 @@ namespace _3dedit
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(9, 252);
+            this.label12.Location = new System.Drawing.Point(6, 246);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(86, 13);
             this.label12.TabIndex = 16;
@@ -498,7 +450,7 @@ namespace _3dedit
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(6, 661);
+            this.label11.Location = new System.Drawing.Point(3, 219);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(58, 13);
             this.label11.TabIndex = 14;
@@ -507,7 +459,7 @@ namespace _3dedit
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(6, 431);
+            this.label10.Location = new System.Drawing.Point(6, 19);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(45, 13);
             this.label10.TabIndex = 13;
@@ -516,7 +468,7 @@ namespace _3dedit
             // m_lbMacros
             // 
             this.m_lbMacros.FormattingEnabled = true;
-            this.m_lbMacros.Location = new System.Drawing.Point(6, 453);
+            this.m_lbMacros.Location = new System.Drawing.Point(6, 38);
             this.m_lbMacros.Name = "m_lbMacros";
             this.m_lbMacros.Size = new System.Drawing.Size(110, 147);
             this.m_lbMacros.Sorted = true;
@@ -527,7 +479,7 @@ namespace _3dedit
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(127, 431);
+            this.label9.Location = new System.Drawing.Point(6, 166);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(71, 13);
             this.label9.TabIndex = 11;
@@ -539,7 +491,7 @@ namespace _3dedit
             this.cb_Show3C.Checked = true;
             this.cb_Show3C.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_Show3C.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.cb_Show3C.Location = new System.Drawing.Point(155, 505);
+            this.cb_Show3C.Location = new System.Drawing.Point(94, 182);
             this.cb_Show3C.Name = "cb_Show3C";
             this.cb_Show3C.Size = new System.Drawing.Size(39, 17);
             this.cb_Show3C.TabIndex = 10;
@@ -553,12 +505,13 @@ namespace _3dedit
             this.cb_Show5C.Checked = true;
             this.cb_Show5C.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_Show5C.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.cb_Show5C.Location = new System.Drawing.Point(155, 551);
+            this.cb_Show5C.Location = new System.Drawing.Point(9, 205);
             this.cb_Show5C.Name = "cb_Show5C";
             this.cb_Show5C.Size = new System.Drawing.Size(39, 17);
             this.cb_Show5C.TabIndex = 10;
             this.cb_Show5C.Text = "5C";
             this.cb_Show5C.UseVisualStyleBackColor = true;
+            this.cb_Show5C.CheckedChanged += new System.EventHandler(this.cb_Show5C_CheckedChanged);
             this.cb_Show5C.CheckStateChanged += new System.EventHandler(this.cb_Show1C_CheckedChanged);
             // 
             // cb_Show1C
@@ -567,7 +520,7 @@ namespace _3dedit
             this.cb_Show1C.Checked = true;
             this.cb_Show1C.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_Show1C.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.cb_Show1C.Location = new System.Drawing.Point(155, 459);
+            this.cb_Show1C.Location = new System.Drawing.Point(9, 182);
             this.cb_Show1C.Name = "cb_Show1C";
             this.cb_Show1C.Size = new System.Drawing.Size(39, 17);
             this.cb_Show1C.TabIndex = 10;
@@ -581,7 +534,7 @@ namespace _3dedit
             this.cb_Show6C.Checked = true;
             this.cb_Show6C.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_Show6C.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.cb_Show6C.Location = new System.Drawing.Point(155, 574);
+            this.cb_Show6C.Location = new System.Drawing.Point(54, 205);
             this.cb_Show6C.Name = "cb_Show6C";
             this.cb_Show6C.Size = new System.Drawing.Size(39, 17);
             this.cb_Show6C.TabIndex = 10;
@@ -595,7 +548,7 @@ namespace _3dedit
             this.cb_Show2C.Checked = true;
             this.cb_Show2C.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_Show2C.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.cb_Show2C.Location = new System.Drawing.Point(155, 482);
+            this.cb_Show2C.Location = new System.Drawing.Point(54, 182);
             this.cb_Show2C.Name = "cb_Show2C";
             this.cb_Show2C.Size = new System.Drawing.Size(39, 17);
             this.cb_Show2C.TabIndex = 10;
@@ -609,7 +562,7 @@ namespace _3dedit
             this.cb_Show7C.Checked = true;
             this.cb_Show7C.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_Show7C.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.cb_Show7C.Location = new System.Drawing.Point(155, 597);
+            this.cb_Show7C.Location = new System.Drawing.Point(94, 205);
             this.cb_Show7C.Name = "cb_Show7C";
             this.cb_Show7C.Size = new System.Drawing.Size(39, 17);
             this.cb_Show7C.TabIndex = 10;
@@ -623,7 +576,7 @@ namespace _3dedit
             this.cb_Show4C.Checked = true;
             this.cb_Show4C.CheckState = System.Windows.Forms.CheckState.Checked;
             this.cb_Show4C.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.cb_Show4C.Location = new System.Drawing.Point(155, 528);
+            this.cb_Show4C.Location = new System.Drawing.Point(134, 182);
             this.cb_Show4C.Name = "cb_Show4C";
             this.cb_Show4C.Size = new System.Drawing.Size(39, 17);
             this.cb_Show4C.TabIndex = 10;
@@ -634,7 +587,7 @@ namespace _3dedit
             // cb_HighlightByColors
             // 
             this.cb_HighlightByColors.AutoSize = true;
-            this.cb_HighlightByColors.Location = new System.Drawing.Point(15, 397);
+            this.cb_HighlightByColors.Location = new System.Drawing.Point(9, 137);
             this.cb_HighlightByColors.Name = "cb_HighlightByColors";
             this.cb_HighlightByColors.Size = new System.Drawing.Size(112, 17);
             this.cb_HighlightByColors.TabIndex = 9;
@@ -647,7 +600,7 @@ namespace _3dedit
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(95, 171);
+            this.label8.Location = new System.Drawing.Point(89, 182);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(17, 13);
             this.label8.TabIndex = 8;
@@ -656,7 +609,7 @@ namespace _3dedit
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(95, 144);
+            this.label7.Location = new System.Drawing.Point(89, 155);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(18, 13);
             this.label7.TabIndex = 8;
@@ -664,10 +617,10 @@ namespace _3dedit
             // 
             // m_trkFullUndoSpeed
             // 
-            this.m_trkFullUndoSpeed.Location = new System.Drawing.Point(97, 245);
+            this.m_trkFullUndoSpeed.Location = new System.Drawing.Point(90, 246);
             this.m_trkFullUndoSpeed.Maximum = 100;
             this.m_trkFullUndoSpeed.Name = "m_trkFullUndoSpeed";
-            this.m_trkFullUndoSpeed.Size = new System.Drawing.Size(104, 45);
+            this.m_trkFullUndoSpeed.Size = new System.Drawing.Size(102, 45);
             this.m_trkFullUndoSpeed.TabIndex = 7;
             this.m_trkFullUndoSpeed.TickStyle = System.Windows.Forms.TickStyle.None;
             this.m_trkFullUndoSpeed.Value = 15;
@@ -675,7 +628,7 @@ namespace _3dedit
             // 
             // m_trkTransparency
             // 
-            this.m_trkTransparency.Location = new System.Drawing.Point(98, 210);
+            this.m_trkTransparency.Location = new System.Drawing.Point(9, 294);
             this.m_trkTransparency.Maximum = 255;
             this.m_trkTransparency.Name = "m_trkTransparency";
             this.m_trkTransparency.Size = new System.Drawing.Size(104, 45);
@@ -686,7 +639,7 @@ namespace _3dedit
             // 
             // trk_LightSpec
             // 
-            this.trk_LightSpec.Location = new System.Drawing.Point(113, 168);
+            this.trk_LightSpec.Location = new System.Drawing.Point(107, 179);
             this.trk_LightSpec.Maximum = 255;
             this.trk_LightSpec.Name = "trk_LightSpec";
             this.trk_LightSpec.Size = new System.Drawing.Size(88, 45);
@@ -696,7 +649,7 @@ namespace _3dedit
             // 
             // trk_LightDiff
             // 
-            this.trk_LightDiff.Location = new System.Drawing.Point(113, 141);
+            this.trk_LightDiff.Location = new System.Drawing.Point(107, 152);
             this.trk_LightDiff.Maximum = 255;
             this.trk_LightDiff.Name = "trk_LightDiff";
             this.trk_LightDiff.Size = new System.Drawing.Size(88, 45);
@@ -707,7 +660,7 @@ namespace _3dedit
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(95, 125);
+            this.label6.Location = new System.Drawing.Point(89, 136);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(33, 13);
             this.label6.TabIndex = 6;
@@ -718,7 +671,7 @@ namespace _3dedit
             this.cb_Col14.AutoSize = true;
             this.cb_Col14.Checked = true;
             this.cb_Col14.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.cb_Col14.Location = new System.Drawing.Point(186, 377);
+            this.cb_Col14.Location = new System.Drawing.Point(159, 109);
             this.cb_Col14.Name = "cb_Col14";
             this.cb_Col14.Size = new System.Drawing.Size(15, 14);
             this.cb_Col14.TabIndex = 5;
@@ -731,7 +684,7 @@ namespace _3dedit
             this.cb_Col13.AutoSize = true;
             this.cb_Col13.Checked = true;
             this.cb_Col13.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.cb_Col13.Location = new System.Drawing.Point(161, 377);
+            this.cb_Col13.Location = new System.Drawing.Point(134, 109);
             this.cb_Col13.Name = "cb_Col13";
             this.cb_Col13.Size = new System.Drawing.Size(15, 14);
             this.cb_Col13.TabIndex = 5;
@@ -744,7 +697,7 @@ namespace _3dedit
             this.cb_Col7.AutoSize = true;
             this.cb_Col7.Checked = true;
             this.cb_Col7.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.cb_Col7.Location = new System.Drawing.Point(186, 327);
+            this.cb_Col7.Location = new System.Drawing.Point(159, 59);
             this.cb_Col7.Name = "cb_Col7";
             this.cb_Col7.Size = new System.Drawing.Size(15, 14);
             this.cb_Col7.TabIndex = 5;
@@ -757,7 +710,7 @@ namespace _3dedit
             this.cb_Col12.AutoSize = true;
             this.cb_Col12.Checked = true;
             this.cb_Col12.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.cb_Col12.Location = new System.Drawing.Point(136, 377);
+            this.cb_Col12.Location = new System.Drawing.Point(109, 109);
             this.cb_Col12.Name = "cb_Col12";
             this.cb_Col12.Size = new System.Drawing.Size(15, 14);
             this.cb_Col12.TabIndex = 5;
@@ -770,7 +723,7 @@ namespace _3dedit
             this.cb_Col6.AutoSize = true;
             this.cb_Col6.Checked = true;
             this.cb_Col6.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.cb_Col6.Location = new System.Drawing.Point(161, 327);
+            this.cb_Col6.Location = new System.Drawing.Point(134, 59);
             this.cb_Col6.Name = "cb_Col6";
             this.cb_Col6.Size = new System.Drawing.Size(15, 14);
             this.cb_Col6.TabIndex = 5;
@@ -783,7 +736,7 @@ namespace _3dedit
             this.cb_Col11.AutoSize = true;
             this.cb_Col11.Checked = true;
             this.cb_Col11.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.cb_Col11.Location = new System.Drawing.Point(111, 377);
+            this.cb_Col11.Location = new System.Drawing.Point(84, 109);
             this.cb_Col11.Name = "cb_Col11";
             this.cb_Col11.Size = new System.Drawing.Size(15, 14);
             this.cb_Col11.TabIndex = 5;
@@ -796,7 +749,7 @@ namespace _3dedit
             this.cb_Col5.AutoSize = true;
             this.cb_Col5.Checked = true;
             this.cb_Col5.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.cb_Col5.Location = new System.Drawing.Point(136, 327);
+            this.cb_Col5.Location = new System.Drawing.Point(109, 59);
             this.cb_Col5.Name = "cb_Col5";
             this.cb_Col5.Size = new System.Drawing.Size(15, 14);
             this.cb_Col5.TabIndex = 5;
@@ -809,7 +762,7 @@ namespace _3dedit
             this.cb_Col10.AutoSize = true;
             this.cb_Col10.Checked = true;
             this.cb_Col10.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.cb_Col10.Location = new System.Drawing.Point(86, 377);
+            this.cb_Col10.Location = new System.Drawing.Point(59, 109);
             this.cb_Col10.Name = "cb_Col10";
             this.cb_Col10.Size = new System.Drawing.Size(15, 14);
             this.cb_Col10.TabIndex = 5;
@@ -822,7 +775,7 @@ namespace _3dedit
             this.cb_Col4.AutoSize = true;
             this.cb_Col4.Checked = true;
             this.cb_Col4.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.cb_Col4.Location = new System.Drawing.Point(111, 327);
+            this.cb_Col4.Location = new System.Drawing.Point(84, 59);
             this.cb_Col4.Name = "cb_Col4";
             this.cb_Col4.Size = new System.Drawing.Size(15, 14);
             this.cb_Col4.TabIndex = 5;
@@ -835,7 +788,7 @@ namespace _3dedit
             this.cb_Col9.AutoSize = true;
             this.cb_Col9.Checked = true;
             this.cb_Col9.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.cb_Col9.Location = new System.Drawing.Point(61, 377);
+            this.cb_Col9.Location = new System.Drawing.Point(34, 109);
             this.cb_Col9.Name = "cb_Col9";
             this.cb_Col9.Size = new System.Drawing.Size(15, 14);
             this.cb_Col9.TabIndex = 5;
@@ -848,7 +801,7 @@ namespace _3dedit
             this.cb_Col3.AutoSize = true;
             this.cb_Col3.Checked = true;
             this.cb_Col3.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.cb_Col3.Location = new System.Drawing.Point(86, 327);
+            this.cb_Col3.Location = new System.Drawing.Point(59, 59);
             this.cb_Col3.Name = "cb_Col3";
             this.cb_Col3.Size = new System.Drawing.Size(15, 14);
             this.cb_Col3.TabIndex = 5;
@@ -861,7 +814,7 @@ namespace _3dedit
             this.cb_Col8.AutoSize = true;
             this.cb_Col8.Checked = true;
             this.cb_Col8.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.cb_Col8.Location = new System.Drawing.Point(36, 377);
+            this.cb_Col8.Location = new System.Drawing.Point(9, 109);
             this.cb_Col8.Name = "cb_Col8";
             this.cb_Col8.Size = new System.Drawing.Size(15, 14);
             this.cb_Col8.TabIndex = 5;
@@ -874,7 +827,7 @@ namespace _3dedit
             this.cb_Col2.AutoSize = true;
             this.cb_Col2.Checked = true;
             this.cb_Col2.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.cb_Col2.Location = new System.Drawing.Point(61, 327);
+            this.cb_Col2.Location = new System.Drawing.Point(34, 59);
             this.cb_Col2.Name = "cb_Col2";
             this.cb_Col2.Size = new System.Drawing.Size(15, 14);
             this.cb_Col2.TabIndex = 5;
@@ -887,7 +840,7 @@ namespace _3dedit
             this.cb_Col1.AutoSize = true;
             this.cb_Col1.Checked = true;
             this.cb_Col1.CheckState = System.Windows.Forms.CheckState.Indeterminate;
-            this.cb_Col1.Location = new System.Drawing.Point(36, 327);
+            this.cb_Col1.Location = new System.Drawing.Point(9, 59);
             this.cb_Col1.Name = "cb_Col1";
             this.cb_Col1.Size = new System.Drawing.Size(15, 14);
             this.cb_Col1.TabIndex = 5;
@@ -898,7 +851,7 @@ namespace _3dedit
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 277);
+            this.label4.Location = new System.Drawing.Point(6, 3);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(39, 13);
             this.label4.TabIndex = 4;
@@ -908,7 +861,7 @@ namespace _3dedit
             // 
             this.m_bCol14.BackColor = System.Drawing.Color.Red;
             this.m_bCol14.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.m_bCol14.Location = new System.Drawing.Point(179, 347);
+            this.m_bCol14.Location = new System.Drawing.Point(152, 79);
             this.m_bCol14.Name = "m_bCol14";
             this.m_bCol14.Size = new System.Drawing.Size(24, 24);
             this.m_bCol14.TabIndex = 3;
@@ -919,7 +872,7 @@ namespace _3dedit
             // 
             this.m_bCol13.BackColor = System.Drawing.Color.Red;
             this.m_bCol13.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.m_bCol13.Location = new System.Drawing.Point(154, 347);
+            this.m_bCol13.Location = new System.Drawing.Point(127, 79);
             this.m_bCol13.Name = "m_bCol13";
             this.m_bCol13.Size = new System.Drawing.Size(24, 24);
             this.m_bCol13.TabIndex = 3;
@@ -930,7 +883,7 @@ namespace _3dedit
             // 
             this.m_bCol7.BackColor = System.Drawing.Color.Red;
             this.m_bCol7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.m_bCol7.Location = new System.Drawing.Point(179, 297);
+            this.m_bCol7.Location = new System.Drawing.Point(152, 29);
             this.m_bCol7.Name = "m_bCol7";
             this.m_bCol7.Size = new System.Drawing.Size(24, 24);
             this.m_bCol7.TabIndex = 3;
@@ -941,7 +894,7 @@ namespace _3dedit
             // 
             this.m_bCol12.BackColor = System.Drawing.Color.Red;
             this.m_bCol12.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.m_bCol12.Location = new System.Drawing.Point(129, 347);
+            this.m_bCol12.Location = new System.Drawing.Point(102, 79);
             this.m_bCol12.Name = "m_bCol12";
             this.m_bCol12.Size = new System.Drawing.Size(24, 24);
             this.m_bCol12.TabIndex = 3;
@@ -952,7 +905,7 @@ namespace _3dedit
             // 
             this.m_bCol6.BackColor = System.Drawing.Color.Red;
             this.m_bCol6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.m_bCol6.Location = new System.Drawing.Point(154, 297);
+            this.m_bCol6.Location = new System.Drawing.Point(127, 29);
             this.m_bCol6.Name = "m_bCol6";
             this.m_bCol6.Size = new System.Drawing.Size(24, 24);
             this.m_bCol6.TabIndex = 3;
@@ -963,7 +916,7 @@ namespace _3dedit
             // 
             this.m_bCol11.BackColor = System.Drawing.Color.Red;
             this.m_bCol11.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.m_bCol11.Location = new System.Drawing.Point(104, 347);
+            this.m_bCol11.Location = new System.Drawing.Point(77, 79);
             this.m_bCol11.Name = "m_bCol11";
             this.m_bCol11.Size = new System.Drawing.Size(24, 24);
             this.m_bCol11.TabIndex = 3;
@@ -974,7 +927,7 @@ namespace _3dedit
             // 
             this.m_bCol5.BackColor = System.Drawing.Color.Red;
             this.m_bCol5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.m_bCol5.Location = new System.Drawing.Point(129, 297);
+            this.m_bCol5.Location = new System.Drawing.Point(102, 29);
             this.m_bCol5.Name = "m_bCol5";
             this.m_bCol5.Size = new System.Drawing.Size(24, 24);
             this.m_bCol5.TabIndex = 3;
@@ -985,7 +938,7 @@ namespace _3dedit
             // 
             this.m_bCol10.BackColor = System.Drawing.Color.Red;
             this.m_bCol10.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.m_bCol10.Location = new System.Drawing.Point(79, 347);
+            this.m_bCol10.Location = new System.Drawing.Point(52, 79);
             this.m_bCol10.Name = "m_bCol10";
             this.m_bCol10.Size = new System.Drawing.Size(24, 24);
             this.m_bCol10.TabIndex = 3;
@@ -996,7 +949,7 @@ namespace _3dedit
             // 
             this.m_bCol4.BackColor = System.Drawing.Color.Red;
             this.m_bCol4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.m_bCol4.Location = new System.Drawing.Point(104, 297);
+            this.m_bCol4.Location = new System.Drawing.Point(77, 29);
             this.m_bCol4.Name = "m_bCol4";
             this.m_bCol4.Size = new System.Drawing.Size(24, 24);
             this.m_bCol4.TabIndex = 3;
@@ -1007,7 +960,7 @@ namespace _3dedit
             // 
             this.m_bCol9.BackColor = System.Drawing.Color.Red;
             this.m_bCol9.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.m_bCol9.Location = new System.Drawing.Point(54, 347);
+            this.m_bCol9.Location = new System.Drawing.Point(27, 79);
             this.m_bCol9.Name = "m_bCol9";
             this.m_bCol9.Size = new System.Drawing.Size(24, 24);
             this.m_bCol9.TabIndex = 3;
@@ -1018,7 +971,7 @@ namespace _3dedit
             // 
             this.m_bCol3.BackColor = System.Drawing.Color.Red;
             this.m_bCol3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.m_bCol3.Location = new System.Drawing.Point(79, 297);
+            this.m_bCol3.Location = new System.Drawing.Point(52, 29);
             this.m_bCol3.Name = "m_bCol3";
             this.m_bCol3.Size = new System.Drawing.Size(24, 24);
             this.m_bCol3.TabIndex = 3;
@@ -1029,7 +982,7 @@ namespace _3dedit
             // 
             this.m_bCol8.BackColor = System.Drawing.Color.Red;
             this.m_bCol8.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.m_bCol8.Location = new System.Drawing.Point(29, 347);
+            this.m_bCol8.Location = new System.Drawing.Point(2, 79);
             this.m_bCol8.Name = "m_bCol8";
             this.m_bCol8.Size = new System.Drawing.Size(24, 24);
             this.m_bCol8.TabIndex = 3;
@@ -1040,7 +993,7 @@ namespace _3dedit
             // 
             this.m_bCol2.BackColor = System.Drawing.Color.Red;
             this.m_bCol2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.m_bCol2.Location = new System.Drawing.Point(54, 297);
+            this.m_bCol2.Location = new System.Drawing.Point(27, 29);
             this.m_bCol2.Name = "m_bCol2";
             this.m_bCol2.Size = new System.Drawing.Size(24, 24);
             this.m_bCol2.TabIndex = 3;
@@ -1051,7 +1004,7 @@ namespace _3dedit
             // 
             this.m_bCol1.BackColor = System.Drawing.Color.Red;
             this.m_bCol1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.m_bCol1.Location = new System.Drawing.Point(29, 297);
+            this.m_bCol1.Location = new System.Drawing.Point(2, 29);
             this.m_bCol1.Name = "m_bCol1";
             this.m_bCol1.Size = new System.Drawing.Size(24, 24);
             this.m_bCol1.TabIndex = 3;
@@ -1063,7 +1016,7 @@ namespace _3dedit
             this.groupBox1.Controls.Add(this.m_rbClick3);
             this.groupBox1.Controls.Add(this.m_rbClick2Inv);
             this.groupBox1.Controls.Add(this.m_rbClick2);
-            this.groupBox1.Location = new System.Drawing.Point(9, 125);
+            this.groupBox1.Location = new System.Drawing.Point(3, 136);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(79, 88);
             this.groupBox1.TabIndex = 2;
@@ -1108,7 +1061,7 @@ namespace _3dedit
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 89);
+            this.label5.Location = new System.Drawing.Point(3, 108);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(63, 13);
             this.label5.TabIndex = 1;
@@ -1116,10 +1069,11 @@ namespace _3dedit
             // 
             // trk_Perspective
             // 
-            this.trk_Perspective.Location = new System.Drawing.Point(97, 89);
+            this.trk_Perspective.BackColor = System.Drawing.SystemColors.Control;
+            this.trk_Perspective.Location = new System.Drawing.Point(90, 108);
             this.trk_Perspective.Maximum = 50;
             this.trk_Perspective.Name = "trk_Perspective";
-            this.trk_Perspective.Size = new System.Drawing.Size(104, 45);
+            this.trk_Perspective.Size = new System.Drawing.Size(101, 45);
             this.trk_Perspective.TabIndex = 0;
             this.trk_Perspective.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trk_Perspective.ValueChanged += new System.EventHandler(this.trk_faceSep_ValueChanged);
@@ -1127,19 +1081,20 @@ namespace _3dedit
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(6, 66);
+            this.label3.Location = new System.Drawing.Point(3, 79);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(63, 13);
             this.label3.TabIndex = 1;
             this.label3.Text = "Sticker Size";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // trk_StickerSize
             // 
-            this.trk_StickerSize.Location = new System.Drawing.Point(97, 66);
+            this.trk_StickerSize.Location = new System.Drawing.Point(90, 76);
             this.trk_StickerSize.Maximum = 50;
             this.trk_StickerSize.Minimum = 1;
             this.trk_StickerSize.Name = "trk_StickerSize";
-            this.trk_StickerSize.Size = new System.Drawing.Size(104, 45);
+            this.trk_StickerSize.Size = new System.Drawing.Size(101, 45);
             this.trk_StickerSize.TabIndex = 0;
             this.trk_StickerSize.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trk_StickerSize.Value = 1;
@@ -1148,19 +1103,20 @@ namespace _3dedit
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(6, 43);
+            this.label2.Location = new System.Drawing.Point(3, 47);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(57, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Block Size";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // trk_BlockSize
             // 
-            this.trk_BlockSize.Location = new System.Drawing.Point(97, 43);
+            this.trk_BlockSize.Location = new System.Drawing.Point(90, 47);
             this.trk_BlockSize.Maximum = 50;
             this.trk_BlockSize.Minimum = 1;
             this.trk_BlockSize.Name = "trk_BlockSize";
-            this.trk_BlockSize.Size = new System.Drawing.Size(104, 45);
+            this.trk_BlockSize.Size = new System.Drawing.Size(102, 45);
             this.trk_BlockSize.TabIndex = 0;
             this.trk_BlockSize.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trk_BlockSize.Value = 1;
@@ -1169,18 +1125,19 @@ namespace _3dedit
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 20);
+            this.label1.Location = new System.Drawing.Point(3, 12);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Face Separation";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // trk_faceSep
             // 
-            this.trk_faceSep.Location = new System.Drawing.Point(97, 20);
+            this.trk_faceSep.Location = new System.Drawing.Point(90, 12);
             this.trk_faceSep.Maximum = 50;
             this.trk_faceSep.Name = "trk_faceSep";
-            this.trk_faceSep.Size = new System.Drawing.Size(104, 45);
+            this.trk_faceSep.Size = new System.Drawing.Size(102, 45);
             this.trk_faceSep.TabIndex = 0;
             this.trk_faceSep.TickStyle = System.Windows.Forms.TickStyle.None;
             this.trk_faceSep.ValueChanged += new System.EventHandler(this.trk_faceSep_ValueChanged);
@@ -1194,7 +1151,7 @@ namespace _3dedit
             this.panel2.Controls.Add(this.menuStrip1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(774, 684);
+            this.panel2.Size = new System.Drawing.Size(926, 766);
             this.panel2.TabIndex = 20;
             // 
             // statusStrip1
@@ -1208,9 +1165,9 @@ namespace _3dedit
             this.m_lblCTime,
             this.activeKeybind,
             this.activeFilter});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 661);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 743);
             this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(774, 23);
+            this.statusStrip1.Size = new System.Drawing.Size(926, 23);
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
@@ -1259,7 +1216,7 @@ namespace _3dedit
             this.activeFilter.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.activeFilter.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.activeFilter.Name = "activeFilter";
-            this.activeFilter.Size = new System.Drawing.Size(74, 21);
+            this.activeFilter.Size = new System.Drawing.Size(52, 21);
             this.activeFilter.Text = "Filter: ";
             this.activeFilter.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
@@ -1274,7 +1231,7 @@ namespace _3dedit
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(774, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(926, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -1677,10 +1634,112 @@ namespace _3dedit
             this.aboutToolStripMenuItem.Text = "About";
             this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Location = new System.Drawing.Point(6, 25);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(206, 729);
+            this.tabControl1.TabIndex = 2;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.BackColor = System.Drawing.SystemColors.Control;
+            this.tabPage1.Controls.Add(this.trk_Perspective);
+            this.tabPage1.Controls.Add(this.label13);
+            this.tabPage1.Controls.Add(this.label5);
+            this.tabPage1.Controls.Add(this.m_trkTransparency);
+            this.tabPage1.Controls.Add(this.label12);
+            this.tabPage1.Controls.Add(this.label3);
+            this.tabPage1.Controls.Add(this.m_trkFullUndoSpeed);
+            this.tabPage1.Controls.Add(this.trk_StickerSize);
+            this.tabPage1.Controls.Add(this.label8);
+            this.tabPage1.Controls.Add(this.label2);
+            this.tabPage1.Controls.Add(this.label7);
+            this.tabPage1.Controls.Add(this.trk_BlockSize);
+            this.tabPage1.Controls.Add(this.label1);
+            this.tabPage1.Controls.Add(this.trk_faceSep);
+            this.tabPage1.Controls.Add(this.trk_LightSpec);
+            this.tabPage1.Controls.Add(this.groupBox1);
+            this.tabPage1.Controls.Add(this.trk_LightDiff);
+            this.tabPage1.Controls.Add(this.label6);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(198, 703);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Settings";
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.label4);
+            this.tabPage2.Controls.Add(this.m_bCol1);
+            this.tabPage2.Controls.Add(this.m_bCol2);
+            this.tabPage2.Controls.Add(this.m_bCol8);
+            this.tabPage2.Controls.Add(this.label9);
+            this.tabPage2.Controls.Add(this.cb_Show3C);
+            this.tabPage2.Controls.Add(this.m_bCol3);
+            this.tabPage2.Controls.Add(this.cb_Show5C);
+            this.tabPage2.Controls.Add(this.m_bCol9);
+            this.tabPage2.Controls.Add(this.cb_Show1C);
+            this.tabPage2.Controls.Add(this.m_bCol4);
+            this.tabPage2.Controls.Add(this.cb_Show6C);
+            this.tabPage2.Controls.Add(this.m_bCol10);
+            this.tabPage2.Controls.Add(this.cb_Show2C);
+            this.tabPage2.Controls.Add(this.m_bCol5);
+            this.tabPage2.Controls.Add(this.cb_Show7C);
+            this.tabPage2.Controls.Add(this.m_bCol11);
+            this.tabPage2.Controls.Add(this.cb_Show4C);
+            this.tabPage2.Controls.Add(this.m_bCol6);
+            this.tabPage2.Controls.Add(this.m_bCol12);
+            this.tabPage2.Controls.Add(this.cb_HighlightByColors);
+            this.tabPage2.Controls.Add(this.m_bCol7);
+            this.tabPage2.Controls.Add(this.m_bCol13);
+            this.tabPage2.Controls.Add(this.m_bCol14);
+            this.tabPage2.Controls.Add(this.cb_Col1);
+            this.tabPage2.Controls.Add(this.cb_Col2);
+            this.tabPage2.Controls.Add(this.cb_Col8);
+            this.tabPage2.Controls.Add(this.cb_Col3);
+            this.tabPage2.Controls.Add(this.cb_Col9);
+            this.tabPage2.Controls.Add(this.cb_Col14);
+            this.tabPage2.Controls.Add(this.cb_Col4);
+            this.tabPage2.Controls.Add(this.cb_Col13);
+            this.tabPage2.Controls.Add(this.cb_Col10);
+            this.tabPage2.Controls.Add(this.cb_Col7);
+            this.tabPage2.Controls.Add(this.cb_Col5);
+            this.tabPage2.Controls.Add(this.cb_Col12);
+            this.tabPage2.Controls.Add(this.cb_Col11);
+            this.tabPage2.Controls.Add(this.cb_Col6);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(198, 703);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Filters";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.m_cbQuickMacro);
+            this.tabPage3.Controls.Add(this.m_RunByClick);
+            this.tabPage3.Controls.Add(this.label11);
+            this.tabPage3.Controls.Add(this.m_lbMacros);
+            this.tabPage3.Controls.Add(this.label10);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage3.Size = new System.Drawing.Size(192, 284);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Macros";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleBaseSize = new System.Drawing.Size(5, 13);
-            this.ClientSize = new System.Drawing.Size(997, 684);
+            this.ClientSize = new System.Drawing.Size(1149, 766);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.panel1);
@@ -1706,6 +1765,13 @@ namespace _3dedit
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            this.tabPage1.PerformLayout();
+            this.tabPage2.ResumeLayout(false);
+            this.tabPage2.PerformLayout();
+            this.tabPage3.ResumeLayout(false);
+            this.tabPage3.PerformLayout();
             this.ResumeLayout(false);
 
 		}
@@ -3041,6 +3107,26 @@ namespace _3dedit
             KeybindsSetup.Show();
             KeybindsSetup.Focus();
             KeybindsSetup.WindowState = FormWindowState.Normal;
+        }
+
+        private void cb_Show5C_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void editFilters_Click(object sender, EventArgs e)
